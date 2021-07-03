@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="./components/main/logo.png" alt="triquetrx">
+    <title>Portfolio - Zaid Khan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body style="height:100vh; padding:0; margin:0; color: #090A0B;">
+    <!--<nav class="navbar justify-content-between" style="padding-left: 0%; padding-top: 0%; padding-right: 0%;">
+        <a class="navbar-brand" href="#">
+            <img src="initials.png" width="77" height="60" alt="Logo" style="color: #FF1B1C; background: #747572;">
+            <div class="navbar" id="navbarNav" style=" padding: 0;padding-right: 10px; ">
+                        <a class="nav-item nav-link" href="work.html" style="text-decoration: none;color: #090A0B;" id="designs">designs</a>
+                        <a class="nav-item nav-link" href="about.html" style="text-decoration: none;color: #090A0B;" id="about">about</a>
+            </div>
+        </a>
+    </nav>-->
+    <div class="container-fluid" style="padding: 0%;margin: 0%; width: 100%;">
+        <div class="row justify-content-between" id="main" style="opacity: 100%; top:0%;">
+            <div class="col-7" style="background: #C1292E; border-color:#C1292E;padding-left: 15px;">
+                <svg height="60" width="90">
+                    <rect width="80" height="80" style="fill:#C1292E" />
+                    <text font-family="'Noto Serif', serif" x="5" y="25" fill="#D7D7D5" > Zaid's</text> 
+                    <text font-family="'Noto Serif', serif" x="5" y="45" fill="#D7D7D5" > Work</text> 
+                </svg>
+            </div>
+            <div class="d-flex justify-content-end col-5" style="right:10px; z-index: -10px;background-color: #C1292E; display: block; overflow: hidden;" id="more">
+                <button onclick="side_open()" style="border:none;color:#D7D7D5;background:#C1292E; border-color:#C1292E;width: 60px;height: 60px;">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col" style="top:0; padding:0px; background: #090A0B;display: none; height: 0vh;margin-top: -60px; width: 100%; overflow:hidden;"id="sideBar">
+            <div class="row justify-content-between">
+                <div class="col-7" style="color: #D7D7D5; padding-left: 13px;">
+                    <h3 class="justify-content-center" style="font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;margin-top: 25px; margin-left: 15px;">Explore</h3>
+                </div>
+                <br>
+                <br>
+                <div class="d-flex justify-content-end col-4 " style="padding-right:0px; margin-right: -5px ; z-index: -10px; display: block;">
+                    <button class="col-3" onclick="side_close()" style="border:none;color:#F5F5F5;background:#090A0B; width: 0px;height: 60px; margin-right: 25px; margin-top: 18px;" id="clsbtn"><i class="fa fa-caret-down fa-rotate-180"></i></button>
+                </div>
+            </div>
+            <a class="nav-item nav-link" href="./index.html" style="right: 0px;font-family: 'Montserrat', sans-serif; text-align: center;" id="option">Home</a>
+            <a class="nav-item nav-link" href="https://triquetrx.blogspot.com/" style="right: 0px; font-family: 'Montserrat', sans-serif; text-align: center;" id="option">Blogs</a>
+            <a class="nav-item nav-link" href="./contactform.html" style="right: 0px; font-family: 'Montserrat', sans-serif; text-align: center;" id="option">Feedback/Contact</a>
+        </div>
+    </div>
+    <div class="space" style="height: 50px;"></div>
+    <main class="container">
+        <h2 class="d-flex justify-content-center" style="color: #090A0B; font-family: 'Montserrat', sans-serif;font: bolder; margin-bottom: 40px;">SOFTWARE BASED</h2>
+        <section class="card">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D22AQGPdgRsGSF0aw/feedshare-shrink_2048_1536/0/1619334040999?e=1628121600&v=beta&t=9BCj1tPdKgTR9MVgRHCdkOdh4EAW3-9SvaVGcyQllCE" width="fit" height="fit" alt="task" />
+            <div>
+              <h3>Task Manager</h3>
+              <p>
+                A vue js based website with HTML & CSS with bootstrap, 
+                It allows user to create task and prioritize the same depending on 
+                the priority of the task points will be provided and the user will be rewarded
+              </p>
+              <button onclick="newTab()" class="btn">Code</button>
+            </div>
+          </section>
+        <section class="card" data-aos="fade-left">
+          <img src="./components/software/user-generator.PNG" width="fit" height="fit" alt="Random User" />
+          <div>
+            <h3>Fake Identity generator</h3>
+            <p>
+              A vue js based website which allows user to generate strong 12 characters
+              password also it uses 'Random User API' to generate fake names, address, and 
+              email address the designing was done with the help bootsrap
+            </p>
+            <button onclick="userGenerator()" class="btn">Visit</button>
+          </div>
+        </section>
+    
+        <section class="card" data-aos="fade-right">
+          <img src="./components/software/discordBot.png" width="fit" height="fit" alt="Bot" />
+          <div>
+            <h3>Discord Bot</h3>
+            <p>
+                A python based discord bot which could respond to every message you send 
+                though it's still text based and not voice but it tells jokes , roast another 
+                member on the channel and more.
+            </p>
+            <button onclick="discordBot()" class="btn">Download</button>
+          </div>
+        </section>
+    
+        <section class="card" data-aos="fade-left">
+          <img src="./components/software/pythonProjects.png" alt="Python" />
+          <div>
+            <h3>Python Based Projects</h3>
+            <p>
+                One of my programming language is python, I created projects for the same few of them are
+                Youtube to Spotify playlist sender using the two APIs of the same, I also created a music bot 
+                using the same. 
+            </p>
+            <button onclick="pythonProjects()" class="btn">View Projects</button>
+          </div>
+        </section>
+    </main>
+    <div class="space" style="height: 50px;"></div>
+    <main class="container">
+        <h2 class="d-flex justify-content-center" style="color: #090A0B; font-family: 'Montserrat', sans-serif;font: bolder; margin-bottom: 40px;" data-aos="fade-down">HARDWARE BASED</h2>
+        <section class="card" data-aos="fade-right">
+            <img src="./components/hardware/disinfectantRobot.png" width="fit" height="fit" alt="Robot" />
+            <div>
+              <h3>Automatic Disinfectant Robot</h3>
+              <p>
+                A raspberry pi based project which used an unmanned vehicle the data to which was provided
+                by the IR sensor and the camera by which it determined the motion of its for camera openCV was 
+                used, once the obstacle was encountered then it sprays the sanitizer for an amount of time which
+                can be varied.
+              </p>
+              <button onclick="sprayingRobot()" class="btn">Read More</button>
+            </div>
+          </section>
+        <section class="card" data-aos="fade-left">
+          <img src="./components/hardware/smartGlasses.png" width="fit" height="fit" alt="Smart Glasses" alt="triquetrx" />
+          <div>
+            <h3>Smart Glasses with Mobile Connectivity</h3>
+            <p>
+                An idea inspired from google glasses we tried making one using Arduino Nano and other such components, 
+                the device is capable of connecting to  the smart phone via Bluetooth using Bluetooth module  
+                and display incoming calls, notifications and time for the same.
+            </p>
+            <button onclick="smartGlasses()" class="btn">Read More</button>
+          </div>
+        </section>
+    </main>
+    <div class="space" style="height: 50px;"></div>
+    <main class="container">
+        <h2 class="d-flex justify-content-center" style="color: #090A0B; font-family: 'Montserrat', sans-serif;font: bolder; margin-bottom: 40px;" data-aos="fade-down">
+            UI DESIGNS
+        </h2>
+        <section class="card" data-aos="fade-right">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D22AQFylCP5hDp3EA/feedshare-shrink_2048_1536/0/1622739570083?e=1628121600&v=beta&t=b93Mgr7CG8OTFOwJS3vSJO4A1q2e5hMOA3RY3mwEeUM" width="fit" height="fit" alt="Scanner App" alt="triquetrx" />
+            <div>
+              <h3>Scanner App</h3>
+              <p>
+                We scan and take a photo of documents we need to send there are already various apps 
+                which do the same was using one of these apps and thought of redesigning it, 
+                how interesting it will be if you could store the contacts on the same app just by scanning the 
+                visiting card, also if you can share the same via NFC the app itself, also if everything you scan 
+                can be categorized under various sections.
+              </p>
+              <button onclick="scannerApp()" class="btn">Know More</button>
+            </div>
+          </section>
+        <section class="card" data-aos="fade-left">
+          <img src="./components/ui/travelApp.png" width="fit" height="fit" alt="Random User Genrator" alt="triquetrx" />
+          <div>
+            <h3>Travel Planner Application</h3>
+            <p>
+                An application with which users can plan there travel and share the same with there 
+                freinds/followers they can also add people to there trip and can split the expenditure
+                in n number of ways.
+            </p>
+            <button class="btn" disabled>Work under progress</button>
+          </div>
+        </section>
+    </main>
+    <div class="space" style="height: 50px;"></div>
+    <main class="container">
+        <h2 class="d-flex justify-content-center" style="color: #090A0B; font-family: 'Montserrat', sans-serif;font: bolder; margin-bottom: 40px;" data-aos="fade-down">
+            PHOTO EDITING
+        </h2>
+        <section class="card" data-aos="fade-right">
+            <img src="./components/photo/photoEditing.png" width="fit" height="fit" alt="task manager" alt="triquetrx" />
+            <div>
+              <h3>For enquiries contact me</h3>
+              <p>
+                I edit photos using Photoshop or LightRoom
+                <br>
+                Few of images edited by me are uploaded on cloud,
+                <br>
+                click on 'View Images' to view them;
+                Also for queries contact me
+              </p>
+              <button onclick=viewImages() class="btn">View Images</button>
+              <button onclick=contactForm() class="btn">Contact</button>
+            </div>
+          </section>
+    </main>
+    <div class="space" style="height: 50px;"></div>
+    <main class="container">
+        <h2 class="d-flex justify-content-center" style="color: #090A0B; font-family: 'Montserrat', sans-serif;font: bolder; margin-bottom: 40px;" data-aos="fade-down">
+            VIDEO EDITING
+        </h2>
+        <section class="card" data-aos="fade-right">
+            <img src="./components/video/videoEditing.png" width="fit" height="fit" alt="Video Editing" alt="triquetrx" />
+            <div>
+              <h3>For queries or to view previous work contact me</h3>
+              <p>
+                I edit videos in premiere pro and after effects depending on one's need the site would 
+                have been a bit more heavy that's why didn't shared the video here, If you want to see my 
+                previous works click on the button below and contact me
+              </p>
+              <button onclick=contactForm() class="btn">Contact</button>
+            </div>
+          </section>
+    </main>
+    <div class="pageFooter">
+        <h6 class="d-flex justify-content-center" style="color: #d7d7d5; padding-top: 10px;">So now how about we connect socially</h6>
+            <div class="d-flex justify-content-center" style="margin-top: 10px;">
+                <div class="text-center center-block">
+                    <a href="https://twitter.com/zik__here" id="social"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/zikhere" id="social"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/triquetrx/" id="social"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="https://github.com/triquetrx" id="social"><i class="fa fa-github-square fa-2x"></i></a>
+                    <a href="https://www.behance.net/triquetrx" id="social"><i class="fa fa-behance-square fa-2x"></i></a>
+                </div>
+          </div>
+          <div class="d-flex justify-content-center copyright" style="color: #d7d7d5; background-color: #C1292E; height: 30px; margin-top: 10px;">
+            <h6 class="d-flex justify-content-center" style="margin-top: 5px;">© 2021 Copyright: Triquetrx</h6>
+          </div>
+    </div>
+</body>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #D7D7D5;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    button{
+        background-color: #C1292E;
+        color: #D7D7D5;
+    }
+    a {
+    color: #333;
+    text-decoration: none;
+    }
+    #option{
+        font-family: 'Montserrat', sans-serif;
+        font-size: bold;
+        color: #D7D7D5;
+        transition-duration: 1s;
+    }
+    #option:hover{
+        font-family: 'Montserrat', sans-serif;
+        font-size: bolder;
+        color: #090A0B;
+        background-color:#C1292E ;
+    }
+    .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    }
+
+    .main-header {
+    height: 55vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    }
+
+    .main-header h1 span {
+    color: #b50d10;
+    }
+
+    .main-header p {
+    font-size: 2rem;
+    }
+
+    img {
+    width: 100%;
+    }
+
+    .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+    }
+
+    .card h3 {
+    margin-bottom: 2rem;
+    }
+
+    .card img {
+    height: 450px;
+    }
+
+    .card > div {
+    padding: 2rem;
+    }
+
+    .card:nth-child(even) img {
+    order: 2;
+    }
+
+
+    .btn {
+    display: inline-block;
+    background: #C1292E;
+    color: #D7D7D5;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    transition-duration: 0.5s;
+    }
+
+    .btn:hover {
+        color: #d7d7d5;
+        box-shadow:0 12px 16px 0 rgba(255, 0, 0, 0.377), 0 16px 50px 0 rgba(255, 0, 0, 0.388);
+    }
+    @media(max-width:600px) {
+        .card {
+            display: block;
+        }
+    }
+    .pageFooter{
+        height: 110px;
+        margin-top: 20px;
+        bottom: 0;
+        background-color: #090a0b;
+    }
+    #social{
+        color: #d7d7d5;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition-duration: 1s;
+    }
+    #social:hover{
+        color: #C1292E;
+    }
+</style>
+<script>
+    AOS.init({
+        offset: 200,
+        delay: 0,
+        duration: 1000 
+    });
+    function side_open(){
+        document.getElementById("sideBar").style.width="100%";
+        document.getElementById("sideBar").style.display="block";
+        document.getElementById("sideBar").style.height="100vh";
+        document.getElementById("main").style.transition="all 1s";
+        document.getElementById("main").style.opacity="0%";
+        document.getElementById("body").style.opacity="0%";
+        document.getElementById("body").style.transition="all 1s";
+    }
+    function side_close(){
+        document.getElementById("sideBar").style.display="none";
+        document.getElementById("main").style.opacity="100%";
+        document.getElementById("sideBar").style.height="0vh";
+        document.getElementById("body").style.opacity="100%";
+    }
+    function showSlides() {
+        var slides = document.getElementsByClassName("imagesTakenSlide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 5000); 
+    }
+    function newTab(){
+        window.open("https://github.com/triquetrx/task-manager","",width=300,height=300)
+    }
+    function userGenerator(){
+        window.open("https://identity-generator.netlify.app/","",width=300,height=300)
+    }
+    function discordBot(){
+        window.open("https://bit.ly/3wszEuC","",width=300,height=300)
+    }
+    function pythonProjects(){
+        window.open("https://github.com/triquetrx?tab=repositories&q=&type=&language=python&sort=","",width=300,height=300)
+    }
+    function sprayingRobot(){
+        window.open("https://triquetrx.blogspot.com/2021/07/automatic-disinfectant-spraying-machine.html","",width=300,height=300)
+    }
+    function smartGlasses(){
+        window.open("https://triquetrx.blogspot.com/2021/07/triquetrx.smart-glasses.html","",width=300,height=300)
+    }
+    function scannerApp(){
+        window.open("https://www.behance.net/gallery/120844141/ScanDoc-Scanner-App","",width=300,height=300)
+    }
+    function contactForm(){
+        window.open("./contactform.html","",width=300,height=300)
+    }
+    function viewImages(){
+        window.open("https://www.dropbox.com/sh/jcpuk6teas8x8t4/AACgHf4bedtHLs3etm8V-1T0a?dl=0","",width=300,height=300)
+    }
+</script>
