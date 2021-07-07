@@ -1,10 +1,10 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyAVV9Tovmh1dqm368Q9KvHGVChbT1ustDM",
-    authDomain: "portfolio-feedback-form.firebaseapp.com",
-    projectId: "portfolio-feedback-form",
-    storageBucket: "portfolio-feedback-form.appspot.com",
+    apiKey: "api-key",
+    authDomain: "obtain-from-firebase",
+    projectId: "name-of-your-project",
+    storageBucket: "obtain-from-firebase",
     messagingSenderId: "5942293526",
-    appId: "1:5942293526:web:f7c65962210e0d9a9b3137"
+    appId: "your-api-id"
 };
 
 firebase.initializeApp(firebaseConfig);
